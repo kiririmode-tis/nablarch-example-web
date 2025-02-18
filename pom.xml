@@ -23,7 +23,7 @@
 
     <webxml.path>src/main/webapp/WEB-INF/web.xml</webxml.path>
   </properties>
-  
+
   <profiles>
     <profile>
       <id>dev-deploy</id>
@@ -78,7 +78,7 @@
       <groupId>com.nablarch.profile</groupId>
       <artifactId>nablarch-web</artifactId>
     </dependency>
-    
+
     <dependency>
       <groupId>com.nablarch.framework</groupId>
       <artifactId>nablarch-fw-web</artifactId>
@@ -98,7 +98,7 @@
       <groupId>com.nablarch.framework</groupId>
       <artifactId>nablarch-fw-web-doublesubmit-jdbc</artifactId>
     </dependency>
-    
+
     <dependency>
       <groupId>com.nablarch.framework</groupId>
       <artifactId>nablarch-common-idgenerator-jdbc</artifactId>
@@ -118,7 +118,7 @@
       <groupId>com.nablarch.framework</groupId>
       <artifactId>nablarch-common-auth-session</artifactId>
     </dependency>
-    
+
     <dependency>
       <groupId>com.nablarch.integration</groupId>
       <artifactId>nablarch-jsr310-adaptor</artifactId>
@@ -172,14 +172,14 @@
       <groupId>jakarta.persistence</groupId>
       <artifactId>jakarta.persistence-api</artifactId>
     </dependency>
-    
+
     <dependency>
       <groupId>com.h2database</groupId>
       <artifactId>h2</artifactId>
       <version>2.2.220</version>
       <scope>runtime</scope>
     </dependency>
-    
+
     <dependency>
       <groupId>com.zaxxer</groupId>
       <artifactId>HikariCP</artifactId>
@@ -275,6 +275,7 @@
           <useAccessor>true</useAccessor>
           <rootPackage>com.nablarch.example.app</rootPackage>
           <entityPackageName>entity</entityPackageName>
+          <javaFileDestDir>src/main/java</javaFileDestDir>
           <dataDirectory>src/test/resources/data/h2</dataDirectory>
           <erdFile>src/main/resources/entity/h2.edm</erdFile>
         </configuration>
